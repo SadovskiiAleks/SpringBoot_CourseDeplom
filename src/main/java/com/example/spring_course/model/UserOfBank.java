@@ -9,9 +9,9 @@ public class UserOfBank {
 
     private long havMoney = 0;
 
-    private String verificationCode;
+    private int verificationCode;
 
-    public UserOfBank(long cardNumber, int validTillMonth, int validTillYear, int CVV, long havMoney,String verificationCode) {
+    public UserOfBank(long cardNumber, int validTillMonth, int validTillYear, int CVV, long havMoney,int verificationCode) {
         this.cardNumber = cardNumber;
         this.validTillMonth = validTillMonth;
         this.validTillYear = validTillYear;
@@ -33,6 +33,8 @@ public class UserOfBank {
     public int getValidTillYear(){
         return this.validTillYear;
     };
+
+    public int getVerificationCode(){return  this.verificationCode;}
 
     public boolean userHaveMoney(long money) {
         return havMoney >= money ? true : false;

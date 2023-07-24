@@ -1,4 +1,4 @@
-package com.example.spring_course.model;
+package com.example.spring_course.model.transfer;
 
 
 public class Transfer {

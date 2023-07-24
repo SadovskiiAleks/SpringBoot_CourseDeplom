@@ -16,8 +16,7 @@ public class ConfirmOperationController {
 
     @CrossOrigin
     @PostMapping("/confirmOperation")
-    public ResponseEntity<?> confirmOperation(@RequestHeader HttpHeaders httpHeaders,
-                                              @RequestBody ConfirmOperation confirmOperation){
+    public ResponseEntity<?> confirmOperation(@RequestBody ConfirmOperation confirmOperation){
         return confirmOperationService.confirmOperation(confirmOperation);
     }
 }

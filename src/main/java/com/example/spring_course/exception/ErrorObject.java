@@ -1,8 +1,8 @@
 package com.example.spring_course.exception;
 
 public class ErrorObject {
-    String massage;
-    int id;
+    private String massage;
+    private int id;
 
     public ErrorObject(String massage,int id) {
         this.massage =massage;
