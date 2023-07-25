@@ -1,6 +1,8 @@
 package com.example.spring_course.service;
 
 import com.example.spring_course.model.transfer.Transfer;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.io.FileWriter;
@@ -9,9 +11,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Component
+//@ConfigurationProperties("my-properties")
 public class LoggerMy {
 
-    String fileWay = "log.txt";
+    @Value("${my-properties.file-way}")
+    private String fileWay;
 
 
     public void loggerLog(Transfer transfer,int operationID, boolean isConfirmedTransfer){
@@ -40,5 +44,9 @@ public class LoggerMy {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void setFileWay(String fileWay) {
+        this.fileWay = fileWay;
     }
 }
