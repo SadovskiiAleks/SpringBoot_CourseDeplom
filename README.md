@@ -7,7 +7,11 @@
 
 
 ## Запуск проекта
+Создания образа для докер: docker build -t rest_app:latest -t rest_app:1.0 .
+Запуск докера: docker run -itd --name rest_app -e my-properties_file-way=log.txt -p 5500:5500 641afd463b73
 
+где 641afd463b73 - ID образа
+-e -Заполнение зависимостей необходимыми параметрами
 
 
 ## Описание задания
