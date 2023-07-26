@@ -1,7 +1,0 @@
-ID transfer: 1 Date 2023.07.25 time 11:31:59 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
-ID transfer: 2 Date 2023.07.25 time 11:32:02 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
-ID transfer: 3 Date 2023.07.25 time 11:32:02 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
-ID transfer: 4 Date 2023.07.25 time 11:32:03 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
-ID transfer: 1 Date 2023.07.25 time 11:37:33 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
-ID transfer: 1 Date 2023.07.25 time 11:38:13 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
-ID transfer: 2 Date 2023.07.25 time 11:38:14 AM MSK Card of sender: 1111000011110001, card of recipient:1111000011110007, amount of transfer:100,  commission of transfer:10, operation result: false
