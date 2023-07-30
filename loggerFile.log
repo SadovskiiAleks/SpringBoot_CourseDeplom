@@ -1,0 +1,279 @@
+2023-07-30T19:37:26.372+03:00  INFO 11268 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 11268 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T19:37:26.374+03:00  INFO 11268 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T19:37:26.406+03:00  INFO 11268 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T19:37:26.406+03:00  INFO 11268 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T19:37:26.959+03:00  INFO 11268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T19:37:26.965+03:00  INFO 11268 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T19:37:26.966+03:00  INFO 11268 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T19:37:27.002+03:00  INFO 11268 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T19:37:27.002+03:00  INFO 11268 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 590 ms
+2023-07-30T19:37:27.231+03:00  INFO 11268 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T19:37:27.256+03:00  INFO 11268 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T19:37:27.263+03:00  INFO 11268 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.179 seconds (process running for 1.716)
+2023-07-30T19:37:30.091+03:00  INFO 11268 --- [http-nio-5500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30T19:37:30.092+03:00  INFO 11268 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-30T19:37:30.092+03:00  INFO 11268 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-30T19:37:30.168+03:00  WARN 11268 --- [http-nio-5500-exec-1] c.e.s.service.TransferService            : Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]confirmed transfer: false
+2023-07-30T19:37:30.168+03:00  WARN 11268 --- [http-nio-5500-exec-1] c.e.s.service.TransferService            : Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]confirmed transfer: false
+2023-07-30T19:37:30.168+03:00  WARN 11268 --- [http-nio-5500-exec-1] c.e.s.service.TransferService            : Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]confirmed transfer: false
+2023-07-30T19:37:30.187+03:00  WARN 11268 --- [http-nio-5500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T19:41:06.024+03:00  INFO 13832 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 13832 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T19:41:06.026+03:00  INFO 13832 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T19:41:06.058+03:00  INFO 13832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T19:41:06.059+03:00  INFO 13832 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T19:41:06.608+03:00  INFO 13832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T19:41:06.614+03:00  INFO 13832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T19:41:06.615+03:00  INFO 13832 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T19:41:06.651+03:00  INFO 13832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T19:41:06.652+03:00  INFO 13832 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2023-07-30T19:41:06.857+03:00  INFO 13832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T19:41:06.880+03:00  INFO 13832 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T19:41:06.886+03:00  INFO 13832 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.145 seconds (process running for 1.63)
+2023-07-30T21:02:38.751+03:00  INFO 28980 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 28980 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:02:38.753+03:00  INFO 28980 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:02:38.791+03:00  INFO 28980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:02:38.791+03:00  INFO 28980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:02:39.396+03:00  INFO 28980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:02:39.401+03:00  INFO 28980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:02:39.402+03:00  INFO 28980 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:02:39.440+03:00  INFO 28980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:02:39.440+03:00  INFO 28980 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
+2023-07-30T21:02:39.675+03:00  INFO 28980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:02:39.700+03:00  INFO 28980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:02:39.706+03:00  INFO 28980 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.294 seconds (process running for 1.819)
+2023-07-30T21:02:53.518+03:00  INFO 28980 --- [http-nio-5500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30T21:02:53.518+03:00  INFO 28980 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-30T21:02:53.519+03:00  INFO 28980 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-30T21:02:53.595+03:00  WARN 28980 --- [http-nio-5500-exec-1] c.e.s.service.TransferService            : ID: 1. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=200, currency=RUR]]
+2023-07-30T21:02:53.614+03:00  WARN 28980 --- [http-nio-5500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:03:08.580+03:00  WARN 28980 --- [http-nio-5500-exec-3] c.e.s.service.ConfirmOperationService    : ID: 2. Confirmed transfer: true, Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110002, amount=Amount[value=200, currency=RUR]]
+2023-07-30T21:20:04.652+03:00  INFO 12376 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 12376 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:20:04.654+03:00  INFO 12376 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:20:04.691+03:00  INFO 12376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:20:04.691+03:00  INFO 12376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:20:05.240+03:00  INFO 12376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:20:05.246+03:00  INFO 12376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:20:05.247+03:00  INFO 12376 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:20:05.283+03:00  INFO 12376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:20:05.284+03:00  INFO 12376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 592 ms
+2023-07-30T21:20:05.489+03:00  INFO 12376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:20:05.512+03:00  INFO 12376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:20:05.518+03:00  INFO 12376 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.16 seconds (process running for 1.654)
+2023-07-30T21:20:10.237+03:00  INFO 12376 --- [http-nio-5500-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30T21:20:10.238+03:00  INFO 12376 --- [http-nio-5500-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-30T21:20:10.238+03:00  INFO 12376 --- [http-nio-5500-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-07-30T21:20:17.089+03:00  WARN 12376 --- [http-nio-5500-exec-6] c.e.s.service.TransferService            : ID: 5. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:20:17.094+03:00  WARN 12376 --- [http-nio-5500-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:22:19.516+03:00  INFO 5160 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 5160 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:22:19.518+03:00  INFO 5160 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:22:19.551+03:00  INFO 5160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:22:19.551+03:00  INFO 5160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:22:20.090+03:00  INFO 5160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:22:20.097+03:00  INFO 5160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:22:20.097+03:00  INFO 5160 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:22:20.135+03:00  INFO 5160 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:22:20.136+03:00  INFO 5160 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
+2023-07-30T21:22:20.344+03:00  INFO 5160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:22:20.368+03:00  INFO 5160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:22:20.375+03:00  INFO 5160 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.152 seconds (process running for 1.647)
+2023-07-30T21:22:35.964+03:00  INFO 13668 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 13668 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:22:35.965+03:00  INFO 13668 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:22:36.001+03:00  INFO 13668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:22:36.001+03:00  INFO 13668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:22:36.575+03:00  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:22:36.581+03:00  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:22:36.582+03:00  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:22:36.618+03:00  INFO 13668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:22:36.618+03:00  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2023-07-30T21:22:36.828+03:00  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:22:36.851+03:00  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:22:36.857+03:00  INFO 13668 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.198 seconds (process running for 1.75)
+2023-07-30T21:22:38.551+03:00  INFO 13668 --- [http-nio-5500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30T21:22:38.551+03:00  INFO 13668 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-30T21:22:38.552+03:00  INFO 13668 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-30T21:22:38.636+03:00  WARN 13668 --- [http-nio-5500-exec-1] c.e.s.service.TransferService            : ID: 1. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:22:38.656+03:00  WARN 13668 --- [http-nio-5500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:22:39.493+03:00  WARN 13668 --- [http-nio-5500-exec-4] c.e.s.service.TransferService            : ID: 2. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:22:39.495+03:00  WARN 13668 --- [http-nio-5500-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:24:33.620+03:00  INFO 13056 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 13056 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:24:33.622+03:00  INFO 13056 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:24:33.654+03:00  INFO 13056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:24:33.654+03:00  INFO 13056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:24:34.205+03:00  INFO 13056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:24:34.211+03:00  INFO 13056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:24:34.212+03:00  INFO 13056 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:24:34.249+03:00  INFO 13056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:24:34.249+03:00  INFO 13056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2023-07-30T21:24:34.281+03:00  WARN 13056 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'confirmOperationController' defined in file [A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes\com\example\spring_course\controller\ConfirmOperationController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.spring_course.service.ConfirmOperationServiceInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-30T21:24:34.283+03:00  INFO 13056 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-30T21:24:34.297+03:00  INFO 13056 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-30T21:24:34.318+03:00 ERROR 13056 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.spring_course.controller.ConfirmOperationController required a bean of type 'com.example.spring_course.service.ConfirmOperationServiceInterface' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.spring_course.service.ConfirmOperationServiceInterface' in your configuration.
+
+2023-07-30T21:26:19.234+03:00  INFO 17276 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 17276 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:26:19.236+03:00  INFO 17276 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:26:19.270+03:00  INFO 17276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:26:19.271+03:00  INFO 17276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:26:19.822+03:00  INFO 17276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:26:19.829+03:00  INFO 17276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:26:19.829+03:00  INFO 17276 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:26:19.870+03:00  INFO 17276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:26:19.870+03:00  INFO 17276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2023-07-30T21:26:20.078+03:00  INFO 17276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:26:20.100+03:00  INFO 17276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:26:20.106+03:00  INFO 17276 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.162 seconds (process running for 1.664)
+2023-07-30T21:26:23.420+03:00  INFO 17276 --- [http-nio-5500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30T21:26:23.420+03:00  INFO 17276 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-30T21:26:23.421+03:00  INFO 17276 --- [http-nio-5500-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-30T21:26:23.494+03:00  WARN 17276 --- [http-nio-5500-exec-1] c.e.s.service.TransferService            : ID: 1. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:26:23.513+03:00  WARN 17276 --- [http-nio-5500-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:26:24.952+03:00  WARN 17276 --- [http-nio-5500-exec-4] c.e.s.service.TransferService            : ID: 2. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:26:24.952+03:00  WARN 17276 --- [http-nio-5500-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:26:26.555+03:00  WARN 17276 --- [http-nio-5500-exec-6] c.e.s.service.TransferService            : ID: 3. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:26:26.556+03:00  WARN 17276 --- [http-nio-5500-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:26:46.578+03:00  INFO 22824 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 22824 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:26:46.580+03:00  INFO 22824 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:26:46.614+03:00  INFO 22824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:26:46.615+03:00  INFO 22824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:26:47.157+03:00  INFO 22824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:26:47.163+03:00  INFO 22824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:26:47.164+03:00  INFO 22824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:26:47.200+03:00  INFO 22824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:26:47.200+03:00  INFO 22824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 585 ms
+2023-07-30T21:26:47.240+03:00  WARN 22824 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transferController' defined in file [A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes\com\example\spring_course\controller\TransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.spring_course.service.TransferServiceInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-30T21:26:47.241+03:00  INFO 22824 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-30T21:26:47.251+03:00  INFO 22824 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-30T21:26:47.264+03:00 ERROR 22824 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.spring_course.controller.TransferController required a bean of type 'com.example.spring_course.service.TransferServiceInterface' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.spring_course.service.TransferServiceInterface' in your configuration.
+
+2023-07-30T21:27:47.884+03:00  INFO 12280 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 12280 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:27:47.887+03:00  INFO 12280 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:27:47.921+03:00  INFO 12280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:27:47.921+03:00  INFO 12280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:27:48.481+03:00  INFO 12280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:27:48.488+03:00  INFO 12280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:27:48.488+03:00  INFO 12280 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:27:48.526+03:00  INFO 12280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:27:48.527+03:00  INFO 12280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2023-07-30T21:27:48.566+03:00  WARN 12280 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transferController' defined in file [A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes\com\example\spring_course\controller\TransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.spring_course.service.TransferServiceInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-30T21:27:48.567+03:00  INFO 12280 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-30T21:27:48.580+03:00  INFO 12280 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-30T21:27:48.595+03:00 ERROR 12280 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.spring_course.controller.TransferController required a bean of type 'com.example.spring_course.service.TransferServiceInterface' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.spring_course.service.TransferServiceInterface' in your configuration.
+
+2023-07-30T21:28:17.824+03:00  INFO 29200 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 29200 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:28:17.825+03:00  INFO 29200 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:28:17.859+03:00  INFO 29200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:28:17.859+03:00  INFO 29200 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:28:18.455+03:00  INFO 29200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:28:18.462+03:00  INFO 29200 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:28:18.462+03:00  INFO 29200 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:28:18.500+03:00  INFO 29200 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:28:18.500+03:00  INFO 29200 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 641 ms
+2023-07-30T21:28:18.711+03:00  INFO 29200 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:28:18.734+03:00  INFO 29200 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:28:18.740+03:00  INFO 29200 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.213 seconds (process running for 1.726)
+2023-07-30T21:28:30.871+03:00  INFO 976 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 976 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:28:30.873+03:00  INFO 976 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:28:30.906+03:00  INFO 976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:28:30.907+03:00  INFO 976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:28:31.447+03:00  INFO 976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:28:31.454+03:00  INFO 976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:28:31.454+03:00  INFO 976 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:28:31.490+03:00  INFO 976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:28:31.490+03:00  INFO 976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 583 ms
+2023-07-30T21:28:31.530+03:00  WARN 976 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transferController' defined in file [A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes\com\example\spring_course\controller\TransferController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.spring_course.service.TransferServiceInterface' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-30T21:28:31.531+03:00  INFO 976 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-30T21:28:31.541+03:00  INFO 976 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-30T21:28:31.555+03:00 ERROR 976 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.spring_course.controller.TransferController required a bean of type 'com.example.spring_course.service.TransferServiceInterface' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.spring_course.service.TransferServiceInterface' in your configuration.
+
+2023-07-30T21:30:01.971+03:00  INFO 31188 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 31188 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:30:01.975+03:00  INFO 31188 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:30:02.013+03:00  INFO 31188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:30:02.013+03:00  INFO 31188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:30:02.636+03:00  INFO 31188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:30:02.642+03:00  INFO 31188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:30:02.643+03:00  INFO 31188 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:30:02.681+03:00  INFO 31188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:30:02.682+03:00  INFO 31188 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 668 ms
+2023-07-30T21:30:02.904+03:00  INFO 31188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:30:02.927+03:00  INFO 31188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:30:02.934+03:00  INFO 31188 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.288 seconds (process running for 1.807)
+2023-07-30T21:30:36.441+03:00  INFO 31704 --- [restartedMain] c.e.s.SpringCourseApplication            : Starting SpringCourseApplication using Java 17.0.7 with PID 31704 (A:\java\HomeWorkNetology\springBoot\Spring_course\target\classes started by Aleks in A:\java\HomeWorkNetology\springBoot\Spring_course)
+2023-07-30T21:30:36.443+03:00  INFO 31704 --- [restartedMain] c.e.s.SpringCourseApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-30T21:30:36.479+03:00  INFO 31704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30T21:30:36.479+03:00  INFO 31704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-30T21:30:37.070+03:00  INFO 31704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2023-07-30T21:30:37.079+03:00  INFO 31704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-30T21:30:37.079+03:00  INFO 31704 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-30T21:30:37.123+03:00  INFO 31704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-30T21:30:37.123+03:00  INFO 31704 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 644 ms
+2023-07-30T21:30:37.356+03:00  INFO 31704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-30T21:30:37.379+03:00  INFO 31704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2023-07-30T21:30:37.386+03:00  INFO 31704 --- [restartedMain] c.e.s.SpringCourseApplication            : Started SpringCourseApplication in 1.25 seconds (process running for 1.773)
+2023-07-30T21:30:41.802+03:00  INFO 31704 --- [http-nio-5500-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-30T21:30:41.802+03:00  INFO 31704 --- [http-nio-5500-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-30T21:30:41.803+03:00  INFO 31704 --- [http-nio-5500-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-30T21:30:41.873+03:00  WARN 31704 --- [http-nio-5500-exec-2] c.e.s.service.TransferService            : ID: 1. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:30:41.894+03:00  WARN 31704 --- [http-nio-5500-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:30:43.299+03:00  WARN 31704 --- [http-nio-5500-exec-4] c.e.s.service.TransferService            : ID: 2. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:30:43.300+03:00  WARN 31704 --- [http-nio-5500-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]
+2023-07-30T21:30:57.161+03:00  WARN 31704 --- [http-nio-5500-exec-6] c.e.s.service.TransferService            : ID: 3. Confirmed transfer: false (Error input data: Invalid recipient card details), Transfer[cardFromNumber=1111000011110001, cardFromValidTill=10/26, cardFromCVV=555, cardToNumber=1111000011110004, amount=Amount[value=100, currency=RUR]]
+2023-07-30T21:30:57.162+03:00  WARN 31704 --- [http-nio-5500-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.spring_course.dto.exception.ErrorInputData: Error input data: Invalid recipient card details]

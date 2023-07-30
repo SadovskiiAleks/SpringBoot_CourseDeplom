@@ -1,8 +1,8 @@
 package com.example.spring_course.exception;
 
-import com.example.spring_course.exception.packageOfExeptin.ErrorConfirmation;
-import com.example.spring_course.exception.packageOfExeptin.ErrorInputData;
-import com.example.spring_course.exception.packageOfExeptin.ErrorTransfer;
+import com.example.spring_course.dto.exception.ErrorConfirmation;
+import com.example.spring_course.dto.exception.ErrorInputData;
+import com.example.spring_course.dto.exception.ErrorTransfer;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -11,14 +11,11 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class ExceptionHandlerAdvice {
-
-
     @ExceptionHandler(ErrorInputData.class)
-    public ResponseEntity<?> errorInputData(ErrorInputData errorInputData) {
+    public ResponseEntity<Object> errorInputData(ErrorInputData errorInputData) {
 
         String massage = errorInputData.getMessage();
         int id = errorInputData.getId();
-
         ErrorObject errorObject = new ErrorObject(massage, id);
 
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
@@ -28,11 +25,10 @@ public class ExceptionHandlerAdvice {
     }
 
     @ExceptionHandler(ErrorTransfer.class)
-    public ResponseEntity<?> errorTransfer(ErrorTransfer errorTransfer) {
+    public ResponseEntity<Object> errorTransfer(ErrorTransfer errorTransfer) {
 
         String massage = errorTransfer.getMessage();
         int id = errorTransfer.getId();
-
         ErrorObject errorObject = new ErrorObject(massage, id);
 
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -41,7 +37,7 @@ public class ExceptionHandlerAdvice {
     }
 
     @ExceptionHandler(ErrorConfirmation.class)
-    public ResponseEntity<?> errorConfirmation(ErrorConfirmation errorConfirmation) {
+    public ResponseEntity<Object> errorConfirmation(ErrorConfirmation errorConfirmation) {
 
         String massage = errorConfirmation.getMessage();
         int id = errorConfirmation.getId();
@@ -52,6 +48,4 @@ public class ExceptionHandlerAdvice {
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(errorObject);
     }
-
-
 }

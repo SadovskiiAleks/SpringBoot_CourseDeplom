@@ -11,7 +11,7 @@ public class UserOfBank {
 
     private int verificationCode;
 
-    public UserOfBank(long cardNumber, int validTillMonth, int validTillYear, int CVV, long havMoney,int verificationCode) {
+    public UserOfBank(long cardNumber, int validTillMonth, int validTillYear, int CVV, long havMoney, int verificationCode) {
         this.cardNumber = cardNumber;
         this.validTillMonth = validTillMonth;
         this.validTillYear = validTillYear;
@@ -24,17 +24,27 @@ public class UserOfBank {
         return cardNumber;
     }
 
-    public int getCVV(){
+    public int getCVV() {
         return this.CVV;
-    };
-    public int getValidTillMonth(){
-        return this.validTillMonth;
-    };
-    public int getValidTillYear(){
-        return this.validTillYear;
-    };
+    }
 
-    public int getVerificationCode(){return  this.verificationCode;}
+    ;
+
+    public int getValidTillMonth() {
+        return this.validTillMonth;
+    }
+
+    ;
+
+    public int getValidTillYear() {
+        return this.validTillYear;
+    }
+
+    ;
+
+    public int getVerificationCode() {
+        return this.verificationCode;
+    }
 
     public boolean userHaveMoney(long money) {
         return havMoney >= money ? true : false;
@@ -46,7 +56,7 @@ public class UserOfBank {
 
     public boolean takeMoneyFromUser(long money) {
         if (userHaveMoney(money)) {
-            havMoney-=money;
+            havMoney -= money;
             return true;
         }
         return false;

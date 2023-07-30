@@ -1,22 +1,25 @@
 package com.example.spring_course.controller;
 
-import com.example.spring_course.model.ConfirmOperation;
+import com.example.spring_course.dto.ConfirmOperation;
 import com.example.spring_course.service.ConfirmOperationService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
+import com.example.spring_course.service.ConfirmOperationServiceInterface;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@RequiredArgsConstructor
 public class ConfirmOperationController {
-    @Autowired
-    ConfirmOperationService confirmOperationService;
+
+    private final ConfirmOperationServiceInterface confirmOperationService;
 
     @CrossOrigin
     @PostMapping("/confirmOperation")
-    public ResponseEntity<?> confirmOperation(@RequestBody ConfirmOperation confirmOperation){
+    public ResponseEntity<Object> confirmOperation(@RequestBody ConfirmOperation confirmOperation) {
         return confirmOperationService.confirmOperation(confirmOperation);
     }
 }

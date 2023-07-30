@@ -4,8 +4,8 @@ public class ErrorObject {
     private String massage;
     private int id;
 
-    public ErrorObject(String massage,int id) {
-        this.massage =massage;
+    public ErrorObject(String massage, int id) {
+        this.massage = massage;
         this.id = id;
     }
 
