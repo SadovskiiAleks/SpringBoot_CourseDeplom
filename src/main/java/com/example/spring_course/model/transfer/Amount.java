@@ -1,5 +1,7 @@
 package com.example.spring_course.model.transfer;
 
-public record Amount(int value, String currency) {
+import java.math.BigDecimal;
+
+public record Amount(BigDecimal value, String currency) {
 
 }

@@ -1,6 +1,4 @@
-package com.example.spring_course.dto.exception;
-
-import com.example.spring_course.dto.exception.base.BaseApplicationException;
+package com.example.spring_course.exception;
 
 public class ErrorConfirmation extends BaseApplicationException {
 

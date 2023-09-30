@@ -3,6 +3,7 @@ package com.example.spring_course;
 import com.example.spring_course.model.transfer.Amount;
 import com.example.spring_course.model.transfer.Transfer;
 import com.example.spring_course.repository.TransferRepository;
+import com.example.spring_course.repository.TransferRepositoryImpl;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.Mockito;
@@ -16,12 +17,12 @@ public class TestTransferRepository {
 
     @BeforeEach
     public void setTransferRepository() {
-        transferRepository = new TransferRepository();
+        transferRepository = new TransferRepositoryImpl();
     }
 
     @Test
     public void testTransactionOne() {
-        TransferRepository transferRepository = new TransferRepository();
+        TransferRepository transferRepository = new TransferRepositoryImpl();
 
         // Правильно ли я использую заглушку для данного  проекта ? Или я, что то не то тестирую.
         // Просто данный объект я могу создать отдельно, без заглушки ?

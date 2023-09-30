@@ -1,4 +1,4 @@
-package com.example.spring_course.dto.exception.base;
+package com.example.spring_course.exception;
 
 public abstract class BaseApplicationException extends RuntimeException {
     private final int id;

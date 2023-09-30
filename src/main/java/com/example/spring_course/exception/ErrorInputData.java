@@ -1,6 +1,4 @@
-package com.example.spring_course.dto.exception;
-
-import com.example.spring_course.dto.exception.base.BaseApplicationException;
+package com.example.spring_course.exception;
 
 public class ErrorInputData extends BaseApplicationException {
     public ErrorInputData(String msg, int id) {
