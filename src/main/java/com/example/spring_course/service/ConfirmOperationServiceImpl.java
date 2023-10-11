@@ -17,11 +17,7 @@ public class ConfirmOperationServiceImpl implements ConfirmOperationService {
     private final TransferRepository transferRepository;
 
     public OperationId confirmOperation(ConfirmOperation confirmOperation) {
-
-
         if (!transferRepository.getTransferMap().containsKey(confirmOperation.getOperationId())) {
-            //Проверить наличие операции по ID
-            // Какую ощибку писать в лог ?
             log.warn("Ненайда операция");
             throw new ErrorConfirmation("Error confirmation: unknown id", confirmOperation.getOperationId());
         } else if (!transferRepository.checkConfirmOperation(confirmOperation)) {

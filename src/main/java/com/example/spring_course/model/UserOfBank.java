@@ -1,53 +1,25 @@
 package com.example.spring_course.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserOfBank {
-
-    private long cardNumber = 0;
-    private int validTillMonth = 0;
-    private int validTillYear = 0;
-    private int CVV = 0;
-
-    //private long havMoney = 0;
-    private BigDecimal havMoney = new BigDecimal(0);
-
+    @Getter
+    private long cardNumber;
+    @Getter
+    private int validTillMonth;
+    @Getter
+    private int validTillYear;
+    @Getter
+    private int CVV;
+    @Getter
     private int verificationCode;
-
-    public UserOfBank(long cardNumber, int validTillMonth, int validTillYear, int CVV, BigDecimal havMoney, int verificationCode) {
-        this.cardNumber = cardNumber;
-        this.validTillMonth = validTillMonth;
-        this.validTillYear = validTillYear;
-        this.CVV = CVV;
-        this.havMoney = havMoney;
-        this.verificationCode = verificationCode;
-    }
-
-    public long getCardNumber() {
-        return cardNumber;
-    }
-
-    public int getCVV() {
-        return this.CVV;
-    }
-
-    ;
-
-    public int getValidTillMonth() {
-        return this.validTillMonth;
-    }
-
-    ;
-
-    public int getValidTillYear() {
-        return this.validTillYear;
-    }
-
-    ;
-
-    public int getVerificationCode() {
-        return this.verificationCode;
-    }
+    private BigDecimal havMoney;
 
     public boolean userHaveMoney(BigDecimal money) {
         return havMoney.compareTo(money) >= 0 ? true : false;

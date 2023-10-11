@@ -23,17 +23,17 @@ public class TransferServiceImpl implements TransferService {
         if (!isCardFromTransferValid) {
             idOfOperation = transferRepository.rememberTransaction(transaction);
             log.warn(String.format("ID: %s. Confirmed transfer: false (Error input data: Invalid sender card details), %s",
-                    idOfOperation,transaction.toString()));
+                    idOfOperation, transaction.toString()));
             throw new ErrorInputData("Error input data: Invalid sender card details", idOfOperation);
         } else if (!isCardToTransferValid) {
             idOfOperation = transferRepository.rememberTransaction(transaction);
             log.warn(String.format("ID: %s. Confirmed transfer: false (Error input data: Invalid recipient card details), %s",
-                    idOfOperation,transaction.toString()));
+                    idOfOperation, transaction.toString()));
             throw new ErrorInputData("Error input data: Invalid recipient card details", idOfOperation);
         } else if (!transferRepository.transaction(transaction)) {
             idOfOperation = transferRepository.rememberTransaction(transaction);
             log.warn(String.format("ID: %s. Confirmed transfer: false(Error transfer: not enough money), %s",
-                    idOfOperation,transaction.toString()));
+                    idOfOperation, transaction.toString()));
             throw new ErrorTransfer("Error transfer: not enough money", idOfOperation);
         } else {
             idOfOperation = transferRepository.rememberTransaction(transaction);

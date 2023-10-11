@@ -15,7 +15,7 @@ public class TestUserOfBankClass {
 
     @BeforeEach
     public void setUser() {
-        userOfBank = new UserOfBank(1, 1, 1, 1, BigDecimal.valueOf(100), 0000);
+        userOfBank = new UserOfBank(1, 1, 1, 1, 0000, BigDecimal.valueOf(100));
     }
 
     @Test

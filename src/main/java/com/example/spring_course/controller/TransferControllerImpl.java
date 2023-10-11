@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin
+
 @RestController
 @RequiredArgsConstructor
 public class TransferControllerImpl implements TransferController {
@@ -22,18 +22,16 @@ public class TransferControllerImpl implements TransferController {
     private final ConfirmOperationService confirmOperationService;
 
     @PostMapping("/transfer")
-    @Override
+    @CrossOrigin(origins = "${transfer.url}")
     public ResponseEntity<OperationId> transfer(@RequestBody Transfer transaction) {
         return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(transferService.transaction(transaction));
+            .contentType(MediaType.APPLICATION_JSON)
+            .body(transferService.transaction(transaction));
     }
 
     @PostMapping("/confirmOperation")
+    @CrossOrigin(origins = "${confirm.operation.url}")
     public ResponseEntity<OperationId> confirmOperation(@RequestBody ConfirmOperation confirmOperation) {
-        return ResponseEntity.ok()
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(confirmOperationService.confirmOperation(confirmOperation));
+        return ResponseEntity.ok().body(confirmOperationService.confirmOperation(confirmOperation));
     }
-
 }

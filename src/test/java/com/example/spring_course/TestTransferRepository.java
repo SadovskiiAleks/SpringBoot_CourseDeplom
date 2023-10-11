@@ -8,7 +8,8 @@ import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import java.math.BigDecimal;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
@@ -32,7 +33,7 @@ public class TestTransferRepository {
         when(transfer.cardToNumber()).thenReturn("1111000011110002");
         when(transfer.cardFromCVV()).thenReturn("555");
         when(transfer.getCardFromValidTill()).thenReturn(new int[]{10, 26});
-        when(transfer.amount()).thenReturn(new Amount(10, "RUR"));
+        when(transfer.amount()).thenReturn(new Amount(BigDecimal.valueOf(10), "RUR"));
 
         assertTrue(transferRepository.transaction(transfer));
     }

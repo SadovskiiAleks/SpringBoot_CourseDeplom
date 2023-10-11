@@ -3,45 +3,40 @@ package com.example.spring_course.repository;
 import com.example.spring_course.dto.ConfirmOperation;
 import com.example.spring_course.model.UserOfBank;
 import com.example.spring_course.model.transfer.Transfer;
-import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.Getter;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
-@Data
-
 public class TransferRepositoryImpl implements TransferRepository {
 
     private final Map<Long, UserOfBank> mapOfUserOfBank = new ConcurrentHashMap<>();
+    @Getter
     private final Map<Integer, Transfer> transferMap = new ConcurrentHashMap<>();
 
-    private int operationId = 0;
+    private static AtomicInteger operationId = new AtomicInteger(0);
 
-    //Почему то тут не получилось через RequiredArgsConstructor
-    @Autowired
     private ValidationTransfer validationTransfer;
 
     public TransferRepositoryImpl() {
-        UserOfBank user1 = new UserOfBank(1111000011110001l,
-                10, 26, 555, BigDecimal.valueOf(50000), 0000);
+        UserOfBank user22 = new UserOfBank();
+        UserOfBank user1 = new UserOfBank(1111000011110001l, 10, 26, 555, 0000, BigDecimal.valueOf(50000));
         mapOfUserOfBank.put(user1.getCardNumber(), user1);
-        UserOfBank user2 = new UserOfBank(1111000011110002l,
-                10, 29, 555, BigDecimal.valueOf(50000), 0000);
+        UserOfBank user2 = new UserOfBank(1111000011110002l, 10, 29, 555, 0000, BigDecimal.valueOf(50000));
         mapOfUserOfBank.put(user2.getCardNumber(), user2);
-        UserOfBank user3 = new UserOfBank(1111000011110003l,
-                10, 29, 555, BigDecimal.valueOf(50000), 0000);
+        UserOfBank user3 = new UserOfBank(1111000011110003l, 10, 29, 555, 0000, BigDecimal.valueOf(50000));
         mapOfUserOfBank.put(user3.getCardNumber(), user3);
+        validationTransfer = new ValidationTransferImpl();
     }
 
     public int rememberTransaction(Transfer transfer) {
-        operationId++;
-        transferMap.put(operationId, transfer);
-        return operationId;
+        operationId.incrementAndGet();
+        transferMap.put(operationId.get(), transfer);
+        return operationId.get();
     }
 
     public boolean transaction(Transfer transfer) {

@@ -4,8 +4,6 @@ import com.example.spring_course.exception.ErrorConfirmation;
 import com.example.spring_course.exception.ErrorDto;
 import com.example.spring_course.exception.ErrorInputData;
 import com.example.spring_course.exception.ErrorTransfer;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -16,7 +14,6 @@ public class ExceptionHandlerAdvice {
     public ResponseEntity<ErrorDto> errorInputData(ErrorInputData errorInputData) {
         ErrorDto errorDto = createErrorDto(errorInputData);
         return ResponseEntity.badRequest()
-                .contentType(MediaType.APPLICATION_JSON)
                 .body(errorDto);
     }
 
@@ -24,16 +21,14 @@ public class ExceptionHandlerAdvice {
     public ResponseEntity<ErrorDto> errorTransfer(ErrorTransfer errorTransfer) {
         ErrorDto errorDto = createErrorDto(errorTransfer);
         return ResponseEntity.internalServerError()
-                .contentType(MediaType.APPLICATION_JSON)
                 .body(errorDto);
     }
 
     @ExceptionHandler(ErrorConfirmation.class)
     public ResponseEntity<ErrorDto> errorConfirmation(ErrorConfirmation errorConfirmation) {
         ErrorDto errorDto = createErrorDto(errorConfirmation);
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+        return ResponseEntity.internalServerError()
                 .header("description", "Error transfer")
-                .contentType(MediaType.APPLICATION_JSON)
                 .body(errorDto);
     }
 
