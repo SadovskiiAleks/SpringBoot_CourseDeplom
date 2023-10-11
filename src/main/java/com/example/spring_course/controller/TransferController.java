@@ -1,22 +1,13 @@
 package com.example.spring_course.controller;
 
+import com.example.spring_course.dto.ConfirmOperation;
+import com.example.spring_course.model.OperationId;
 import com.example.spring_course.model.transfer.Transfer;
-import com.example.spring_course.service.TransferService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
 
-@RestController
-public class TransferController {
+public interface TransferController {
+    public ResponseEntity<OperationId> transfer(@RequestBody Transfer transaction);
 
-    @Autowired
-    TransferService transferService;
-
-    @CrossOrigin
-    @PostMapping("/transfer")
-    public ResponseEntity<?> transfer(@RequestBody Transfer transaction){
-        System.out.println();
-        System.out.println(transaction.toString());
-        return transferService.transaction(transaction);
-    }
+    public ResponseEntity<OperationId> confirmOperation(@RequestBody ConfirmOperation confirmOperation);
 }

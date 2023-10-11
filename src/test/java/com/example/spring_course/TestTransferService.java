@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class TestTransferService {
     @Test
-    public void testTransaction(){
+    public void testTransaction() {
 
     }
 }

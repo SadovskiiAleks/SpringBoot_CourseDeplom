@@ -1,11 +1,11 @@
 package com.example.spring_course.exception;
 
-public class ErrorObject {
+public class ErrorDto {
     private String massage;
     private int id;
 
-    public ErrorObject(String massage,int id) {
-        this.massage =massage;
+    public ErrorDto(String massage, int id) {
+        this.massage = massage;
         this.id = id;
     }
 
@@ -27,8 +27,8 @@ public class ErrorObject {
 
     public boolean equals(final Object o) {
         if (o == this) return true;
-        if (!(o instanceof ErrorObject)) return false;
-        final ErrorObject other = (ErrorObject) o;
+        if (!(o instanceof ErrorDto)) return false;
+        final ErrorDto other = (ErrorDto) o;
         if (!other.canEqual((Object) this)) return false;
         final Object this$massage = this.getMassage();
         final Object other$massage = other.getMassage();
@@ -38,7 +38,7 @@ public class ErrorObject {
     }
 
     protected boolean canEqual(final Object other) {
-        return other instanceof ErrorObject;
+        return other instanceof ErrorDto;
     }
 
     public int hashCode() {
